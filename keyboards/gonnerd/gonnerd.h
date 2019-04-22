@@ -1,5 +1,6 @@
 #ifndef GONNERD_H
 #define GONNERD_H
+#define _X_ KC_NO
 
 #include "quantum.h"
 
@@ -31,12 +32,27 @@
         K07, K79, K16, K17, K26, K27, K36, K37, K46, K47, K56, K57, K66, K67, \
         K06, K05, K78,                K70,                K72, K73, K74, K75  \
 ) LAYOUT_tkl( \
-        K08,          KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,    KC_NO, KC_NO, KC_NO,  \
-        KC_NO, K01,   K10,   K11,   K20,   K21,   K30,   K31,   K40,   K41,   K50,   K51,   K60,    K61,      KC_NO, KC_NO, KC_NO,  \
-        K02,   K03,   K12,   K13,   K22,   K23,   K32,   K33,   K42,   K43,   K52,   K53,   K62,    K63,      KC_NO, KC_NO, KC_NO,  \
-        K04,   K14,   K15,   K24,   K25,   K34,   K35,   K44,   K45,   K54,   K55,   K64,   K71,    K65,                            \
-        K07,   K79,   K16,   K17,   K26,   K27,   K36,   K37,   K46,   K47,   K56,   K57,   K66,    K67,             KC_NO,         \
-        K06,   K05,   K78,                        K70,                        K72,   K73,   K74,    K75,      KC_NO, KC_NO, KC_NO   \
+        K08,      _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_,    _X_, _X_, _X_, \
+        _X_, K01, K10, K11, K20, K21, K30, K31, K40, K41, K50, K51, K60, K61,    _X_, _X_, _X_, \
+        K02, K03, K12, K13, K22, K23, K32, K33, K42, K43, K52, K53, K62, K63,    _X_, _X_, _X_, \
+        K04, K14, K15, K24, K25, K34, K35, K44, K45, K54, K55, K64, K71, K65,                   \
+        K07, K79, K16, K17, K26, K27, K36, K37, K46, K47, K56, K57, K66, K67,         _X_,      \
+        K06, K05, K78,                K70,                K72, K73, K74, K75,    _X_, _X_, _X_  \
+)
+
+#define LAYOUT_60_hhkb( \
+        K08, K01, K10, K11, K20, K21, K30, K31, K40, K41, K50, K51, K60, K61, ???, \
+        K02, K03, K12, K13, K22, K23, K32, K33, K42, K43, K52, K53, K62, K63, \
+        K04, K14, K15, K24, K25, K34, K35, K44, K45, K54, K55, K64, K65, \
+        K07, K16, K17, K26, K27, K36, K37, K46, K47, K56, K57, K66, K67, \
+             K05, K78,                K70,                K72, K73 \
+) LAYOUT_tkl( \
+        K08,      _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_, _X_,    _X_, _X_, _X_, \
+        _X_, K01, K10, K11, K20, K21, K30, K31, K40, K41, K50, K51, K60, K61,    _X_, _X_, _X_, \
+        K02, K03, K12, K13, K22, K23, K32, K33, K42, K43, K52, K53, K62, K63,    _X_, _X_, _X_, \
+        K04, K14, K15, K24, K25, K34, K35, K44, K45, K54, K55, K64, _X_, K65,                   \
+        K07, _X_, K16, K17, K26, K27, K36, K37, K46, K47, K56, K57, K66, K67,         _X_,      \
+        _X_, K05, K78,                K70,                K72, K73, _X_, _X_,    _X_, _X_, _X_  \
 )
 
 #endif
